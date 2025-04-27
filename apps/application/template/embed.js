@@ -114,7 +114,7 @@ const initChat=(root)=>{
             chat_button.style.width =chat_button_img.naturalWidth+'px'
             chat_button.style.height =chat_button_img.naturalHeight+'px'
         }
-  if({{is_draggable}}){
+  // if({{is_draggable}}){
   chat_button.addEventListener("drag",drag)
   chat_button.addEventListener("dragover",(e)=>{
              e.preventDefault()
@@ -122,7 +122,7 @@ const initChat=(root)=>{
   chat_button.addEventListener("dragend",drag)
   chat_button.addEventListener("touchstart",drag)
   chat_button.addEventListener("touchmove",drag)
-  }
+  // }
   viewport.onclick=viewport_func
   closeviewport.onclick=viewport_func
 }
